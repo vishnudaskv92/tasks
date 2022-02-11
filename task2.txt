@@ -1,0 +1,13 @@
+CPU Stats  -	Time CPU spent	                                                 - SSL Offloading is cpu sensitive process so its important to monitor CPU metrics (user,system,io,nice)
+
+Disk Stats -	Disk I/O metrics from /proc/diskstats	                         - To measure DISK IO of the server while performing Encrytion / Decryption
+
+FileSystem -	Exposes filesystem statistics, such as disk space used.          - To track the disk space of the server from different partitions
+
+loadavg	   -	System’s workload for last 15 minutes./proc/loadavg              - Load averages can be useful for a quick and dirty idea if a machine has gotten busier (for some definition of busier) recently
+
+netstat	   - 	Network statistics from /proc/net/netstat	                 - Get key network metrics from SSL-offloading server
+
+meminfo	   - 	Exposes the memory stat	                                         - Memory related metrics of server to identify memory issues
+ 
+filefd	   - 	Exposes file descriptor statistics from /proc/sys/fs/file-nr.	 - To check number of FD of the server

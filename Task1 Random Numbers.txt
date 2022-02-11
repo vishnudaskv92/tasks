@@ -1,0 +1,12 @@
+#!/bin/bash
+#Printing random numbers using $RANDOM variable
+ 
+function random {  #function created to generate random number
+number=$(($RANDOM % 10 + 1)) #random generated number from 1 to 10 is saved to variable 'number'
+echo Random number is $number #Numner is printing using echo command
+}
+counter=0   
+while [ $counter -lt 10 ]; do  #Using while loop, tried to print 10 numbers 
+    let counter+=1 # Increments the variable by 1 
+    random #Calling the function to generate random number
+done # While loop closed
